@@ -6,7 +6,7 @@ from django.db import models
 
 # Create your models here.
 class User(models.Model):
-    name = models.CharField(max_length=50, null=False)
+    name = models.CharField(max_length=50, null=False, unique=True)
     creation_time = models.DateTimeField(auto_now_add=True)
     modification_time = models.DateTimeField(auto_now=True)
 
@@ -23,4 +23,14 @@ class Activity(models.Model):
     modification_time = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = 'activity'
+        db_table = 'activity_feed'
+
+
+class FriendShip(models.Model):
+    actor_id = models.IntegerField(null=False, unique=True)
+    target_ids = models.TextField(null=False)
+    creation_time = models.DateTimeField(auto_now_add=True)
+    modification_time = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table = 'friend_status'
