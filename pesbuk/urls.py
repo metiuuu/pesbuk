@@ -14,8 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django.contrib import admin
+from django.views.decorators.csrf import csrf_exempt
+
+from activity import views as activiy_views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^create_user', csrf_exempt(activiy_views.create_user), name='create_user'),
+    url(r'^create_activity', csrf_exempt(activiy_views.create_activity), name='create_activity'),
 ]
