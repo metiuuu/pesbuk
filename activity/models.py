@@ -10,9 +10,6 @@ class User(models.Model):
     creation_time = models.DateTimeField(auto_now_add=True)
     modification_time = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        db_table = 'user'
-
 
 class Activity(models.Model):
     actor_id = models.IntegerField(null=False)
@@ -22,10 +19,6 @@ class Activity(models.Model):
     creation_time = models.DateTimeField(auto_now_add=True)
     modification_time = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        db_table = 'activity_feed'
-        unique_together = ('actor_id', 'verb', 'object', 'target_id')
-
 
 class FriendShip(models.Model):
     actor_id = models.IntegerField(null=False, unique=True)
@@ -33,5 +26,3 @@ class FriendShip(models.Model):
     creation_time = models.DateTimeField(auto_now_add=True)
     modification_time = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        db_table = 'friend_status'
