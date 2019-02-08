@@ -21,12 +21,9 @@ Related api to run this project has been documented awesomely in link bellow (Th
 Database schema and all of it greatness can be found in activity.models.py or check bellow:
     
     class User(models.Model):
-    name = models.CharField(max_length=50, null=False, unique=True)
-    creation_time = models.DateTimeField(auto_now_add=True)
-    modification_time = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        db_table = 'user'
+        name = models.CharField(max_length=50, null=False, unique=True)
+        creation_time = models.DateTimeField(auto_now_add=True)
+        modification_time = models.DateTimeField(auto_now=True)
 
 
     class Activity(models.Model):
@@ -37,19 +34,12 @@ Database schema and all of it greatness can be found in activity.models.py or ch
         creation_time = models.DateTimeField(auto_now_add=True)
         modification_time = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        db_table = 'activity_feed'
-        unique_together = ('actor_id', 'verb', 'object', 'target_id')
-
 
     class FriendShip(models.Model):
         actor_id = models.IntegerField(null=False, unique=True)
         friend_ids = models.TextField(null=False)
         creation_time = models.DateTimeField(auto_now_add=True)
         modification_time = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        db_table = 'friend_status'
 
 # Others
  
