@@ -15,15 +15,16 @@ class User(models.Model):
 
 
 class Activity(models.Model):
-    actor = models.ForeignKey(User, related_name='actor_id')
+    actor_id = models.IntegerField(null=False)
     verb = models.CharField(max_length=256, null=False)
     object = models.CharField(max_length=256, null=True)
-    target = models.ForeignKey(User, null=True, related_name='target_id')
+    target_id = models.IntegerField(null=True)
     creation_time = models.DateTimeField(auto_now_add=True)
     modification_time = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = 'activity_feed'
+        unique_together = ('actor_id', 'verb', 'object', 'target_id')
 
 
 class FriendShip(models.Model):
