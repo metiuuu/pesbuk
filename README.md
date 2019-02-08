@@ -57,7 +57,11 @@ Database schema and all of it greatness can be found in activity.models.py or ch
  
     Django, D-J-A-N-G-O, the D is silent
 
-
-# Another others
-
 Thank you to Bapak Eric Pierce, and Pak Andriano Winarta for this interview opportunity. And thank you to Dear Jesus for everything thy have given me in this life. God bless you all. Cheers!
+
+    28 Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom. 
+    29 He gives strength to the weary and increases the power of the weak. 
+    30 Even youths grow tired and weary, and young men stumble and fall; 
+    31 but those who hope in the LORD will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.
+    
+    Isaiah 40:28-31 
