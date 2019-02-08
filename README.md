@@ -14,7 +14,7 @@ After it you execute command above then can take a look into api docs bellow to 
 
 Related api to run this project has been documented awesomely in link bellow (Thanks to Mr. Postman):
 
-    https://web.postman.co/collections/236547-68a9fc5d-b808-4c67-902c-6b75ca97d64d?workspace=96a426b7-0c10-4692-80d0-a8185cb2e407
+    https://documenter.getpostman.com/view/236547/RztppnZw
     
 # DB schema 
 
