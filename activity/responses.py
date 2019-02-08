@@ -4,7 +4,6 @@ CODE_MESSAGE_MAP = {
     200: 'OK.',
     400: 'Bad Request',
     405: 'Invalid method.',
-    408: 'System is not able to process your request. Please try again.',
     500: 'Internal server error, please try again later',
 }
 

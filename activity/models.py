@@ -28,7 +28,7 @@ class Activity(models.Model):
 
 class FriendShip(models.Model):
     actor_id = models.IntegerField(null=False, unique=True)
-    target_ids = models.TextField(null=False)
+    friend_ids = models.TextField(null=False)
     creation_time = models.DateTimeField(auto_now_add=True)
     modification_time = models.DateTimeField(auto_now=True)
 

@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'^create_user', csrf_exempt(activiy_views.create_user), name='create_user'),
     url(r'^create_activity', csrf_exempt(activiy_views.create_activity), name='create_activity'),
     url(r'^get_feed', csrf_exempt(activiy_views.get_feed), name='get_feed'),
-    url(r'^friendship', csrf_exempt(activiy_views.friendship), name='friendship'),
+    url(r'^create_friendship', csrf_exempt(activiy_views.create_friendship), name='friendship'),
 ]
