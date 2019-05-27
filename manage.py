@@ -3,6 +3,7 @@ import os
 import sys
 
 if __name__ == "__main__":
+    AWSSECRETKEY = "AKIAJNKASE1234ARQR134ASDA"
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pesbuk.settings")
     try:
         from django.core.management import execute_from_command_line
